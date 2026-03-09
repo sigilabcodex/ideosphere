@@ -1,0 +1,58 @@
+[
+  {
+    "id": "coordination",
+    "name": "Coordination of Society",
+    "definition": "Preferred mechanisms for coordinating collective action, from emergent local ordering to comprehensive planning.",
+    "branches": ["emergent", "managed"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "authority",
+    "name": "Locus of Legitimate Authority",
+    "definition": "Where legitimacy is believed to originate and how power should be justified.",
+    "branches": ["distributed", "concentrated"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "scale",
+    "name": "Scale of Governance",
+    "definition": "Preferred level at which rules should be designed and enforced.",
+    "branches": ["subsidiarity", "macro-integration"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "property-order",
+    "name": "Property and Resource Order",
+    "definition": "How ownership, stewardship, and distribution of resources should be structured.",
+    "branches": ["commons-plural", "exclusive-rights"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "information-order",
+    "name": "Information Order",
+    "definition": "How societies should govern truth claims, media systems, and epistemic authority.",
+    "branches": ["open-contestation", "curated-coherence"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "institutional-stance",
+    "name": "Institutional Stance",
+    "definition": "Attitude toward inherited institutions versus redesign and experimentation.",
+    "branches": ["adaptive-reform", "structural-reconstruction"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "historical-orientation",
+    "name": "Historical Orientation",
+    "definition": "Primary temporal anchor for political judgment: continuity with inheritance or future redesign.",
+    "branches": ["continuity", "futurity"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  },
+  {
+    "id": "political-epistemology",
+    "name": "Political Epistemology",
+    "definition": "How political knowledge should be validated: lived practice, expertise, deliberation, or models.",
+    "branches": ["experiential-plural", "analytic-systemic"],
+    "supportedLayers": ["descriptive", "aspirational", "pragmatic", "strategic"]
+  }
+]
