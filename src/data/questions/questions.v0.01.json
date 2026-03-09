@@ -1,0 +1,206 @@
+[
+  {
+    "id": "q1",
+    "family": "governance-design",
+    "text": "Major infrastructure decisions should be guided by nationally coordinated planning rather than local negotiation.",
+    "layer": "descriptive",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "coordination", "direction": 1, "weight": 0.9 },
+      { "axisId": "scale", "direction": 1, "weight": 0.7 },
+      { "axisId": "authority", "direction": 1, "weight": 0.5 }
+    ],
+    "tags": ["infrastructure", "planning"]
+  },
+  {
+    "id": "q2",
+    "family": "governance-design",
+    "text": "Communities generally solve social conflicts better when they can tailor rules to local context.",
+    "layer": "descriptive",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "scale", "direction": -1, "weight": 0.9 },
+      { "axisId": "coordination", "direction": -1, "weight": 0.6 },
+      { "axisId": "authority", "direction": -1, "weight": 0.4 }
+    ],
+    "tags": ["localism"]
+  },
+  {
+    "id": "q3",
+    "family": "institutions",
+    "text": "Existing civic institutions usually deserve iterative reform instead of wholesale replacement.",
+    "layer": "descriptive",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "institutional-stance", "direction": -1, "weight": 1.0 },
+      { "axisId": "historical-orientation", "direction": -1, "weight": 0.5 }
+    ]
+  },
+  {
+    "id": "q4",
+    "family": "institutions",
+    "text": "When institutions fail repeatedly, structural reconstruction is preferable to incremental repair.",
+    "layer": "aspirational",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "institutional-stance", "direction": 1, "weight": 1.0 },
+      { "axisId": "historical-orientation", "direction": 1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q5",
+    "family": "resources",
+    "text": "Critical resources like water and energy grids should be treated as shared civic commons.",
+    "layer": "descriptive",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "property-order", "direction": -1, "weight": 1.0 },
+      { "axisId": "authority", "direction": -1, "weight": 0.3 }
+    ]
+  },
+  {
+    "id": "q6",
+    "family": "resources",
+    "text": "Strong private ownership rights are the most reliable basis for long-term investment and stewardship.",
+    "layer": "descriptive",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "property-order", "direction": 1, "weight": 1.0 },
+      { "axisId": "coordination", "direction": 1, "weight": 0.3 }
+    ]
+  },
+  {
+    "id": "q7",
+    "family": "information",
+    "text": "Public discourse is healthier when competing truth claims remain openly contestable.",
+    "layer": "descriptive",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "information-order", "direction": -1, "weight": 1.0 },
+      { "axisId": "political-epistemology", "direction": -1, "weight": 0.6 }
+    ]
+  },
+  {
+    "id": "q8",
+    "family": "information",
+    "text": "A stable society needs trusted institutions to actively filter harmful misinformation.",
+    "layer": "aspirational",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "information-order", "direction": 1, "weight": 1.0 },
+      { "axisId": "authority", "direction": 1, "weight": 0.5 }
+    ]
+  },
+  {
+    "id": "q9",
+    "family": "legitimacy",
+    "text": "Political legitimacy should emerge primarily from participatory deliberation rather than elite expertise.",
+    "layer": "descriptive",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "authority", "direction": -1, "weight": 1.0 },
+      { "axisId": "political-epistemology", "direction": -1, "weight": 0.5 }
+    ]
+  },
+  {
+    "id": "q10",
+    "family": "legitimacy",
+    "text": "Complex policy domains should grant greater decision authority to trained expert institutions.",
+    "layer": "aspirational",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "authority", "direction": 1, "weight": 0.9 },
+      { "axisId": "political-epistemology", "direction": 1, "weight": 0.7 }
+    ]
+  },
+  {
+    "id": "q11",
+    "family": "time",
+    "text": "Political judgment should prioritize preserving inherited social contracts where possible.",
+    "layer": "descriptive",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "historical-orientation", "direction": -1, "weight": 1.0 },
+      { "axisId": "institutional-stance", "direction": -1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q12",
+    "family": "time",
+    "text": "Societies should be willing to suspend legacy assumptions to design radically future-fit systems.",
+    "layer": "aspirational",
+    "abstractionLevel": "abstract",
+    "axisImpacts": [
+      { "axisId": "historical-orientation", "direction": 1, "weight": 1.0 },
+      { "axisId": "institutional-stance", "direction": 1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q13",
+    "family": "epistemics",
+    "text": "Policy should be evaluated primarily through measurable systems outcomes rather than narrative resonance.",
+    "layer": "descriptive",
+    "abstractionLevel": "concrete",
+    "axisImpacts": [
+      { "axisId": "political-epistemology", "direction": 1, "weight": 1.0 },
+      { "axisId": "information-order", "direction": 1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q14",
+    "family": "epistemics",
+    "text": "Lived experience from affected communities should carry equal weight with formal policy models.",
+    "layer": "aspirational",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "political-epistemology", "direction": -1, "weight": 1.0 },
+      { "axisId": "authority", "direction": -1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q15",
+    "family": "coordination",
+    "text": "In emergencies, temporary centralized command is often necessary to maintain coherence.",
+    "layer": "descriptive",
+    "abstractionLevel": "concrete",
+    "axisImpacts": [
+      { "axisId": "coordination", "direction": 1, "weight": 0.8 },
+      { "axisId": "authority", "direction": 1, "weight": 0.8 },
+      { "axisId": "scale", "direction": 1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q16",
+    "family": "coordination",
+    "text": "Resilience improves when networks can self-organize without awaiting centralized instruction.",
+    "layer": "aspirational",
+    "abstractionLevel": "concrete",
+    "axisImpacts": [
+      { "axisId": "coordination", "direction": -1, "weight": 0.8 },
+      { "axisId": "authority", "direction": -1, "weight": 0.6 },
+      { "axisId": "scale", "direction": -1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q17",
+    "family": "global-order",
+    "text": "Transnational institutions should set baseline rules for climate, labor, and trade.",
+    "layer": "aspirational",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "scale", "direction": 1, "weight": 1.0 },
+      { "axisId": "coordination", "direction": 1, "weight": 0.4 }
+    ]
+  },
+  {
+    "id": "q18",
+    "family": "global-order",
+    "text": "Political authority should remain primarily local, even when coordination costs increase.",
+    "layer": "descriptive",
+    "abstractionLevel": "institutional",
+    "axisImpacts": [
+      { "axisId": "scale", "direction": -1, "weight": 1.0 },
+      { "axisId": "authority", "direction": -1, "weight": 0.5 }
+    ]
+  }
+]
