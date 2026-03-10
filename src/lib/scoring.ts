@@ -7,6 +7,8 @@ import type {
   QuestionDefinition,
 } from '../types/ideosphere';
 
+const activeLayers: ActiveLayer[] = ['descriptive', 'aspirational'];
+
 const clamp = (n: number, min: number, max: number) => Math.min(max, Math.max(min, n));
 
 export function buildLayerProfile(
@@ -43,6 +45,17 @@ export function buildLayerProfile(
   const uncertainty = 1 - coverage;
 
   return { layer, coverage, uncertainty, axisScores };
+}
+
+export function buildProfiles(
+  questions: QuestionDefinition[],
+  answers: Record<string, AnswerRecord>,
+  axisIds: string[],
+): Record<ActiveLayer, LayerProfile> {
+  return activeLayers.reduce<Record<ActiveLayer, LayerProfile>>((acc, layer) => {
+    acc[layer] = buildLayerProfile(layer, questions, answers, axisIds);
+    return acc;
+  }, {} as Record<ActiveLayer, LayerProfile>);
 }
 
 const axisToVector: [number, number, number][] = [
