@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/AxisSummary.tsx","./src/components/IdeosphereCanvas.tsx","./src/components/LayerToggle.tsx","./src/components/QuestionCard.tsx","./src/lib/data.ts","./src/lib/scoring.ts","./src/types/ideosphere.ts"],"version":"5.9.3"}
