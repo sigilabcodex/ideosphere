@@ -1,5 +1,4 @@
 import type {
-  ActiveLayer,
   AnswerRecord,
   AxisScore,
   CloudParameters,
@@ -7,17 +6,15 @@ import type {
   QuestionDefinition,
 } from '../types/ideosphere';
 
-const activeLayers: ActiveLayer[] = ['descriptive', 'aspirational'];
-
 const clamp = (n: number, min: number, max: number) => Math.min(max, Math.max(min, n));
 
 export function buildLayerProfile(
-  layer: ActiveLayer,
+  layer: string,
   questions: QuestionDefinition[],
   answers: Record<string, AnswerRecord>,
   axisIds: string[],
 ): LayerProfile {
-  const relevant = questions.filter((q) => q.layer === layer);
+  const relevant = layer === 'unified' ? questions : questions.filter((q) => q.layer === layer);
   const answered = relevant.filter((q) => answers[q.id]);
 
   const axisScores: AxisScore[] = axisIds.map((axisId) => {
@@ -51,11 +48,13 @@ export function buildProfiles(
   questions: QuestionDefinition[],
   answers: Record<string, AnswerRecord>,
   axisIds: string[],
-): Record<ActiveLayer, LayerProfile> {
-  return activeLayers.reduce<Record<ActiveLayer, LayerProfile>>((acc, layer) => {
+): Record<string, LayerProfile> {
+  const layers = Array.from(new Set(questions.map((q) => q.layer)));
+
+  return layers.reduce<Record<string, LayerProfile>>((acc, layer) => {
     acc[layer] = buildLayerProfile(layer, questions, answers, axisIds);
     return acc;
-  }, {} as Record<ActiveLayer, LayerProfile>);
+  }, {});
 }
 
 const axisToVector: [number, number, number][] = [

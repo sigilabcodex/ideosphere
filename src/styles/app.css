@@ -30,8 +30,8 @@ p { color: #a9b8d1; line-height: 1.45; }
 .center-stage { min-width: 0; }
 .viz-mount { width: 100%; height: 100%; }
 
-.layer-toggle { display: flex; gap: 0.5rem; margin: 1rem 0; }
-.layer-toggle button,
+.language-toggle { display: flex; gap: 0.5rem; margin: 1rem 0; }
+.language-toggle button,
 .likert button {
   border: 1px solid #2c3d59;
   background: #101827;
@@ -40,7 +40,7 @@ p { color: #a9b8d1; line-height: 1.45; }
   padding: 0.55rem 0.75rem;
   cursor: pointer;
 }
-.layer-toggle button.active,
+.language-toggle button.active,
 .likert button.active {
   border-color: #7faeff;
   box-shadow: 0 0 0 1px #7faeff66 inset;
@@ -66,7 +66,19 @@ p { color: #a9b8d1; line-height: 1.45; }
 
 .question-card { border: 1px solid #24344f; background: #0d1522; border-radius: 12px; padding: 1rem; }
 .question-card .meta { margin: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: #8ca1c2; }
-.question-card h3 { margin: 0.75rem 0 1rem; font-size: 1.1rem; font-weight: 500; line-height: 1.45; }
+.question-card h3 { margin: 0.3rem 0 1rem; font-size: 1.1rem; font-weight: 500; line-height: 1.45; }
+
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.65rem; }
+.tag-chip {
+  font-size: 0.72rem;
+  color: #b4c7e6;
+  border: 1px solid #2e415f;
+  background: #121e30;
+  border-radius: 999px;
+  padding: 0.15rem 0.45rem;
+}
+.skip-button { opacity: 0.85; }
+
 .likert { display: grid; gap: 0.5rem; }
 .likert button { text-align: left; }
 
