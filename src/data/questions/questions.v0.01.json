@@ -1,206 +1,235 @@
 [
   {
-    "id": "q1",
-    "family": "governance-design",
-    "text": "Major infrastructure decisions should be guided by nationally coordinated planning rather than local negotiation.",
+    "id": "coordination_local_01",
+    "family": "governance_coordination",
+    "text": {
+      "en": "Local communities should handle most public decisions.",
+      "es": "Las comunidades locales deberían tomar la mayoría de las decisiones públicas."
+    },
     "layer": "descriptive",
     "abstractionLevel": "institutional",
+    "visibleTags": ["Descriptive", "Institutional"],
     "axisImpacts": [
-      { "axisId": "coordination", "direction": 1, "weight": 0.9 },
-      { "axisId": "scale", "direction": 1, "weight": 0.7 },
-      { "axisId": "authority", "direction": 1, "weight": 0.5 }
-    ],
-    "tags": ["infrastructure", "planning"]
+      { "axis": "scale", "branch": "subsidiarity", "weight": 1.1 },
+      { "axis": "coordination", "branch": "emergent", "weight": 0.8 }
+    ]
   },
   {
-    "id": "q2",
-    "family": "governance-design",
-    "text": "Communities generally solve social conflicts better when they can tailor rules to local context.",
-    "layer": "descriptive",
+    "id": "coordination_national_01",
+    "family": "governance_coordination",
+    "text": {
+      "en": "National plans are usually better for big infrastructure projects.",
+      "es": "Los planes nacionales suelen ser mejores para grandes proyectos de infraestructura."
+    },
+    "layer": "pragmatic",
     "abstractionLevel": "institutional",
+    "visibleTags": ["Pragmatic", "Institutional"],
     "axisImpacts": [
-      { "axisId": "scale", "direction": -1, "weight": 0.9 },
-      { "axisId": "coordination", "direction": -1, "weight": 0.6 },
-      { "axisId": "authority", "direction": -1, "weight": 0.4 }
-    ],
-    "tags": ["localism"]
-  },
-  {
-    "id": "q3",
-    "family": "institutions",
-    "text": "Existing civic institutions usually deserve iterative reform instead of wholesale replacement.",
-    "layer": "descriptive",
-    "abstractionLevel": "abstract",
-    "axisImpacts": [
-      { "axisId": "institutional-stance", "direction": -1, "weight": 1.0 },
-      { "axisId": "historical-orientation", "direction": -1, "weight": 0.5 }
+      { "axis": "scale", "branch": "macro-integration", "weight": 1.1 },
+      { "axis": "coordination", "branch": "managed", "weight": 0.8 }
     ]
   },
   {
-    "id": "q4",
-    "family": "institutions",
-    "text": "When institutions fail repeatedly, structural reconstruction is preferable to incremental repair.",
-    "layer": "aspirational",
-    "abstractionLevel": "abstract",
+    "id": "authority_participation_01",
+    "family": "authority_design",
+    "text": {
+      "en": "People should have direct input on major policy choices.",
+      "es": "La gente debería tener participación directa en las decisiones políticas importantes."
+    },
+    "layer": "prescriptive",
+    "abstractionLevel": "concrete",
+    "visibleTags": ["Prescriptive", "Concrete"],
     "axisImpacts": [
-      { "axisId": "institutional-stance", "direction": 1, "weight": 1.0 },
-      { "axisId": "historical-orientation", "direction": 1, "weight": 0.4 }
+      { "axis": "authority", "branch": "distributed", "weight": 1.0 },
+      { "axis": "political-epistemology", "branch": "experiential-plural", "weight": 0.5 }
     ]
   },
   {
-    "id": "q5",
-    "family": "resources",
-    "text": "Critical resources like water and energy grids should be treated as shared civic commons.",
-    "layer": "descriptive",
+    "id": "authority_expert_01",
+    "family": "authority_design",
+    "text": {
+      "en": "Experts should have more control in highly technical policy areas.",
+      "es": "Las personas expertas deberían tener más control en áreas de política muy técnicas."
+    },
+    "layer": "pragmatic",
     "abstractionLevel": "institutional",
+    "visibleTags": ["Pragmatic", "Institutional"],
     "axisImpacts": [
-      { "axisId": "property-order", "direction": -1, "weight": 1.0 },
-      { "axisId": "authority", "direction": -1, "weight": 0.3 }
+      { "axis": "authority", "branch": "concentrated", "weight": 1.0 },
+      { "axis": "political-epistemology", "branch": "analytic-systemic", "weight": 0.6 }
     ]
   },
   {
-    "id": "q6",
-    "family": "resources",
-    "text": "Strong private ownership rights are the most reliable basis for long-term investment and stewardship.",
+    "id": "institution_reform_01",
+    "family": "institution_change",
+    "text": {
+      "en": "When institutions fail, improving them is usually better than replacing them.",
+      "es": "Cuando las instituciones fallan, mejorarlas suele ser mejor que reemplazarlas."
+    },
     "layer": "descriptive",
     "abstractionLevel": "abstract",
+    "visibleTags": ["Descriptive", "Abstract"],
     "axisImpacts": [
-      { "axisId": "property-order", "direction": 1, "weight": 1.0 },
-      { "axisId": "coordination", "direction": 1, "weight": 0.3 }
+      { "axis": "institutional-stance", "branch": "adaptive-reform", "weight": 1.0 },
+      { "axis": "historical-orientation", "branch": "continuity", "weight": 0.4 }
     ]
   },
   {
-    "id": "q7",
-    "family": "information",
-    "text": "Public discourse is healthier when competing truth claims remain openly contestable.",
-    "layer": "descriptive",
+    "id": "institution_rebuild_01",
+    "family": "institution_change",
+    "text": {
+      "en": "If old institutions keep failing, society should build new ones from scratch.",
+      "es": "Si las instituciones antiguas siguen fallando, la sociedad debería crear nuevas desde cero."
+    },
+    "layer": "prescriptive",
     "abstractionLevel": "abstract",
+    "visibleTags": ["Prescriptive", "Abstract"],
     "axisImpacts": [
-      { "axisId": "information-order", "direction": -1, "weight": 1.0 },
-      { "axisId": "political-epistemology", "direction": -1, "weight": 0.6 }
+      { "axis": "institutional-stance", "branch": "structural-reconstruction", "weight": 1.0 },
+      { "axis": "historical-orientation", "branch": "futurity", "weight": 0.4 }
     ]
   },
   {
-    "id": "q8",
-    "family": "information",
-    "text": "A stable society needs trusted institutions to actively filter harmful misinformation.",
-    "layer": "aspirational",
+    "id": "resources_commons_01",
+    "family": "resource_order",
+    "text": {
+      "en": "Water and power systems should be managed as shared public resources.",
+      "es": "Los sistemas de agua y energía deberían gestionarse como recursos públicos compartidos."
+    },
+    "layer": "prescriptive",
     "abstractionLevel": "institutional",
+    "visibleTags": ["Prescriptive", "Institutional"],
     "axisImpacts": [
-      { "axisId": "information-order", "direction": 1, "weight": 1.0 },
-      { "axisId": "authority", "direction": 1, "weight": 0.5 }
+      { "axis": "property-order", "branch": "commons-plural", "weight": 1.2 }
     ]
   },
   {
-    "id": "q9",
-    "family": "legitimacy",
-    "text": "Political legitimacy should emerge primarily from participatory deliberation rather than elite expertise.",
+    "id": "resources_property_01",
+    "family": "resource_order",
+    "text": {
+      "en": "Strong private ownership is the best way to protect long-term investment.",
+      "es": "La propiedad privada fuerte es la mejor forma de proteger la inversión a largo plazo."
+    },
     "layer": "descriptive",
     "abstractionLevel": "abstract",
+    "visibleTags": ["Descriptive", "Abstract"],
     "axisImpacts": [
-      { "axisId": "authority", "direction": -1, "weight": 1.0 },
-      { "axisId": "political-epistemology", "direction": -1, "weight": 0.5 }
+      { "axis": "property-order", "branch": "exclusive-rights", "weight": 1.2 }
     ]
   },
   {
-    "id": "q10",
-    "family": "legitimacy",
-    "text": "Complex policy domains should grant greater decision authority to trained expert institutions.",
-    "layer": "aspirational",
-    "abstractionLevel": "institutional",
-    "axisImpacts": [
-      { "axisId": "authority", "direction": 1, "weight": 0.9 },
-      { "axisId": "political-epistemology", "direction": 1, "weight": 0.7 }
-    ]
-  },
-  {
-    "id": "q11",
-    "family": "time",
-    "text": "Political judgment should prioritize preserving inherited social contracts where possible.",
-    "layer": "descriptive",
-    "abstractionLevel": "abstract",
-    "axisImpacts": [
-      { "axisId": "historical-orientation", "direction": -1, "weight": 1.0 },
-      { "axisId": "institutional-stance", "direction": -1, "weight": 0.4 }
-    ]
-  },
-  {
-    "id": "q12",
-    "family": "time",
-    "text": "Societies should be willing to suspend legacy assumptions to design radically future-fit systems.",
-    "layer": "aspirational",
-    "abstractionLevel": "abstract",
-    "axisImpacts": [
-      { "axisId": "historical-orientation", "direction": 1, "weight": 1.0 },
-      { "axisId": "institutional-stance", "direction": 1, "weight": 0.4 }
-    ]
-  },
-  {
-    "id": "q13",
-    "family": "epistemics",
-    "text": "Policy should be evaluated primarily through measurable systems outcomes rather than narrative resonance.",
+    "id": "information_open_01",
+    "family": "information_governance",
+    "text": {
+      "en": "Public debate is healthier when competing claims can be challenged openly.",
+      "es": "El debate público es más sano cuando las posturas en competencia pueden cuestionarse abiertamente."
+    },
     "layer": "descriptive",
     "abstractionLevel": "concrete",
+    "visibleTags": ["Descriptive", "Concrete"],
     "axisImpacts": [
-      { "axisId": "political-epistemology", "direction": 1, "weight": 1.0 },
-      { "axisId": "information-order", "direction": 1, "weight": 0.4 }
+      { "axis": "information-order", "branch": "open-contestation", "weight": 1.0 }
     ]
   },
   {
-    "id": "q14",
-    "family": "epistemics",
-    "text": "Lived experience from affected communities should carry equal weight with formal policy models.",
-    "layer": "aspirational",
+    "id": "information_filter_01",
+    "family": "information_governance",
+    "text": {
+      "en": "Trusted institutions should actively limit harmful misinformation.",
+      "es": "Las instituciones de confianza deberían limitar activamente la desinformación dañina."
+    },
+    "layer": "pragmatic",
     "abstractionLevel": "institutional",
+    "visibleTags": ["Pragmatic", "Institutional"],
     "axisImpacts": [
-      { "axisId": "political-epistemology", "direction": -1, "weight": 1.0 },
-      { "axisId": "authority", "direction": -1, "weight": 0.4 }
+      { "axis": "information-order", "branch": "curated-coherence", "weight": 1.0 },
+      { "axis": "authority", "branch": "concentrated", "weight": 0.4 }
     ]
   },
   {
-    "id": "q15",
-    "family": "coordination",
-    "text": "In emergencies, temporary centralized command is often necessary to maintain coherence.",
+    "id": "time_continuity_01",
+    "family": "historical_orientation",
+    "text": {
+      "en": "Political change should respect long-standing social norms when possible.",
+      "es": "El cambio político debería respetar las normas sociales de larga tradición cuando sea posible."
+    },
     "layer": "descriptive",
+    "abstractionLevel": "abstract",
+    "visibleTags": ["Descriptive", "Abstract"],
+    "axisImpacts": [
+      { "axis": "historical-orientation", "branch": "continuity", "weight": 1.0 }
+    ]
+  },
+  {
+    "id": "time_futurity_01",
+    "family": "historical_orientation",
+    "text": {
+      "en": "Society should be willing to redesign institutions for future needs.",
+      "es": "La sociedad debería estar dispuesta a rediseñar instituciones para necesidades futuras."
+    },
+    "layer": "prescriptive",
+    "abstractionLevel": "abstract",
+    "visibleTags": ["Prescriptive", "Abstract"],
+    "axisImpacts": [
+      { "axis": "historical-orientation", "branch": "futurity", "weight": 1.0 }
+    ]
+  },
+  {
+    "id": "epistemic_models_01",
+    "family": "policy_knowledge",
+    "text": {
+      "en": "Policy should be judged mostly by measurable outcomes.",
+      "es": "Las políticas deberían evaluarse principalmente por resultados medibles."
+    },
+    "layer": "pragmatic",
     "abstractionLevel": "concrete",
+    "visibleTags": ["Pragmatic", "Concrete"],
     "axisImpacts": [
-      { "axisId": "coordination", "direction": 1, "weight": 0.8 },
-      { "axisId": "authority", "direction": 1, "weight": 0.8 },
-      { "axisId": "scale", "direction": 1, "weight": 0.4 }
+      { "axis": "political-epistemology", "branch": "analytic-systemic", "weight": 1.0 }
     ]
   },
   {
-    "id": "q16",
-    "family": "coordination",
-    "text": "Resilience improves when networks can self-organize without awaiting centralized instruction.",
-    "layer": "aspirational",
+    "id": "epistemic_lived_01",
+    "family": "policy_knowledge",
+    "text": {
+      "en": "Lived experience should count as much as formal policy analysis.",
+      "es": "La experiencia vivida debería contar tanto como el análisis formal de políticas."
+    },
+    "layer": "prescriptive",
+    "abstractionLevel": "institutional",
+    "visibleTags": ["Prescriptive", "Institutional"],
+    "axisImpacts": [
+      { "axis": "political-epistemology", "branch": "experiential-plural", "weight": 1.0 }
+    ]
+  },
+  {
+    "id": "coordination_market_01",
+    "family": "coordination_methods",
+    "text": {
+      "en": "Flexible local systems adapt faster than centralized plans.",
+      "es": "Los sistemas locales flexibles se adaptan más rápido que los planes centralizados."
+    },
+    "layer": "pragmatic",
     "abstractionLevel": "concrete",
+    "visibleTags": ["Pragmatic", "Concrete"],
     "axisImpacts": [
-      { "axisId": "coordination", "direction": -1, "weight": 0.8 },
-      { "axisId": "authority", "direction": -1, "weight": 0.6 },
-      { "axisId": "scale", "direction": -1, "weight": 0.4 }
+      { "axis": "coordination", "branch": "emergent", "weight": 1.0 },
+      { "axis": "scale", "branch": "subsidiarity", "weight": 0.6 }
     ]
   },
   {
-    "id": "q17",
-    "family": "global-order",
-    "text": "Transnational institutions should set baseline rules for climate, labor, and trade.",
-    "layer": "aspirational",
-    "abstractionLevel": "institutional",
+    "id": "coordination_state_01",
+    "family": "coordination_methods",
+    "text": {
+      "en": "Coordinated national systems are needed to manage major crises.",
+      "es": "Se necesitan sistemas nacionales coordinados para gestionar crisis graves."
+    },
+    "layer": "prescriptive",
+    "abstractionLevel": "concrete",
+    "visibleTags": ["Prescriptive", "Concrete"],
     "axisImpacts": [
-      { "axisId": "scale", "direction": 1, "weight": 1.0 },
-      { "axisId": "coordination", "direction": 1, "weight": 0.4 }
-    ]
-  },
-  {
-    "id": "q18",
-    "family": "global-order",
-    "text": "Political authority should remain primarily local, even when coordination costs increase.",
-    "layer": "descriptive",
-    "abstractionLevel": "institutional",
-    "axisImpacts": [
-      { "axisId": "scale", "direction": -1, "weight": 1.0 },
-      { "axisId": "authority", "direction": -1, "weight": 0.5 }
+      { "axis": "coordination", "branch": "managed", "weight": 1.0 },
+      { "axis": "scale", "branch": "macro-integration", "weight": 0.6 }
     ]
   }
 ]

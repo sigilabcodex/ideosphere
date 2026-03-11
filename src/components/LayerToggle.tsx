@@ -1,14 +1,14 @@
-import type { ActiveLayer } from '../types/ideosphere';
+import type { QuestionLayer } from '../types/ideosphere';
 
 interface Props {
-  activeLayer: ActiveLayer;
-  onChange: (layer: ActiveLayer) => void;
+  activeLayer: QuestionLayer;
+  onChange: (layer: QuestionLayer) => void;
 }
 
 export function LayerToggle({ activeLayer, onChange }: Props) {
   return (
     <div className="layer-toggle">
-      {(['descriptive', 'aspirational'] as const).map((layer) => (
+      {(['descriptive', 'pragmatic', 'prescriptive'] as const).map((layer) => (
         <button
           key={layer}
           type="button"

@@ -48,7 +48,7 @@ export const isSerializedProfile = (value: unknown): value is SerializedProfile 
     return false;
   }
 
-  return isLayerProfile(value.profiles.descriptive) && isLayerProfile(value.profiles.aspirational);
+  return Object.values(value.profiles).every(isLayerProfile);
 };
 
 export function answerRecordsToSerializedAnswers(answers: Record<string, AnswerRecord>): Record<string, LikertValue> {

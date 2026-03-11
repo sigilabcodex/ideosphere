@@ -1,6 +1,7 @@
-export type LayerId = 'descriptive' | 'aspirational' | 'pragmatic' | 'strategic';
-export type ActiveLayer = 'descriptive' | 'aspirational';
+export type LayerId = 'descriptive' | 'pragmatic' | 'prescriptive' | 'strategic';
+export type QuestionLayer = 'descriptive' | 'pragmatic' | 'prescriptive';
 export type AbstractionLevel = 'concrete' | 'institutional' | 'abstract';
+export type SupportedLanguage = 'en' | 'es';
 
 export interface AxisDefinition {
   id: string;
@@ -19,11 +20,11 @@ export interface AxisImpact {
 export interface QuestionDefinition {
   id: string;
   family: string;
-  text: string;
-  layer: ActiveLayer;
+  text: Record<SupportedLanguage, string>;
+  layer: QuestionLayer;
   abstractionLevel: AbstractionLevel;
+  visibleTags: string[];
   axisImpacts: AxisImpact[];
-  tags?: string[];
 }
 
 export type LikertValue = -2 | -1 | 0 | 1 | 2;
@@ -40,7 +41,7 @@ export interface AxisScore {
 }
 
 export interface LayerProfile {
-  layer: ActiveLayer;
+  layer: string;
   coverage: number;
   uncertainty: number;
   axisScores: AxisScore[];
